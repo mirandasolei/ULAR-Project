@@ -1,0 +1,370 @@
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.barra1{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 86px;
+  margin-right: 86px;
+}
+.logo{
+  text-decoration: none;
+  color: black;
+  font-size: 50px;
+}
+.logo:hover{
+  text-decoration: none;
+  color: black;
+  font-size: 50px;
+}
+.btn{
+  font-size: 20px;
+}
+
+.navbar{
+  background-color: #222222;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.op {
+  margin: 20px 0px;
+  color:white;
+  font-size: 16px;
+}
+
+.carousel-caption{
+  top:5%;
+  text-align: center;
+}
+.carousel-caption h1{
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.carousel-caption h2{
+  font-size: 50px;
+  font-weight: bold;
+  background-color:rgba(22, 22, 22, 0.7);
+  padding: 10px 10px;
+}
+
+.carousel-caption h3{
+  margin-top: 30%;
+  background-color:rgba(22, 22, 22, 0.25);
+  padding: 10px 10px;
+}
+#cyb{
+  margin-bottom:90%;
+  text-align: left;
+  margin-right: 70%;
+  color: white;
+  animation-name: titlea;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  }
+  @keyframes titlea {
+  from {color: white;}
+  to {color: darkgrey;}
+  }
+
+#desc{
+  margin-bottom:75%;
+  text-align: left;
+  margin-right: 65%;
+}
+#coma{
+  margin-top:2%;
+  text-align: left;
+  margin-right: 55%;
+}
+#tit{
+  margin-top: 50%;
+  font-size: 35px;
+  text-align: right;
+
+}
+#tit a{
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  text-decoration: underline;
+  font-size: 35px;
+}
+
+.tit a:hover{
+  transform: scale(0.9);
+}
+
+
+/*Contacto*/
+#myModal{
+  background-color: rgba(255,255,255,.5);
+}
+.modal-content{
+  background-color: rgba(255,255,255,.9);
+  color: black;
+  text-align: center;
+}
+.modal-dialog h1{
+  text-align: center;
+}
+.modal-dialog h2{
+  text-align: center;
+  font-size: 15px;
+}
+.modal-dialog p{
+  text-align: right;
+  padding-right: 50px;
+}
+#botoo{
+  text-align: center;
+}
+
+.caja{
+  margin-bottom: 20%;
+}
+.caja #im{
+  margin: -50% 42%;
+}
+.row{
+  margin: 0 20%;
+}
+
+.textt h2{
+  background-color: #222222;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin: 15% 0;
+  padding: 5% 0;
+}
+#boton{
+  color: #222222;
+  text-decoration: underline;
+  text-align: center;
+}
+#boton2{
+  color: #222222;
+  text-decoration: underline;
+  text-align: center;
+}
+#boton2 h3{
+  padding-top: 10%;
+  padding-left: 30%;
+}
+.rop{
+  display: flex;
+  flex: 25%;
+  margin-right: 23%;
+}
+.rop img{
+  width: 95%;
+  height: 90%;
+}
+.divv{
+  flex: 50%;
+}
+.basic{
+  background-color: #222222;
+  color: white;
+  padding: 20px 110px;
+  margin-top: 50px;
+}
+.divv h3{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.parte3{
+  display: flex;
+  justify-content: center;
+  margin-left: 16%;
+  margin-right: 16%;
+}
+.conoce{
+  background-color: #222222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 13%;
+  text-align: center;
+  padding: 35px 0px;
+}
+.conoce h3{
+  font-size: 25px;
+  padding-left: 50px;
+}
+.conoce h4{
+  text-decoration: underline;
+  font-size: 16px;
+  padding-top: 7px;
+  color: white;
+  padding-right: 70px;
+}
+.why{
+  margin: 0 13%;
+ background-color: rgba(22,22,22,.9);
+  color: white;
+  text-align: center;
+  padding: 25px 0px;
+}
+.why h1{
+  font-size: 24px;
+}
+.why p{
+  font-size: 30px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+/*footer*/
+.fin{
+text-align: center;
+font-size: 50px;
+background-color: #222222;
+color: white;
+}
+.fin2{
+text-align: center;
+font-size: 20px;
+}
+.fin2 h2{
+  font-size: 22px;
+}
+.fin2 h3{
+  font-size: 19px;
+}
+.fin3{
+  align-items: center;
+  margin-left: 86px;
+  margin-right: 86px;
+  display: flex;
+  justify-content: space-between;
+}
+.fin3 h2{
+  font-size: 15px;
+}
+
+
+/*Comprar*/
+#app{
+  display: flex;
+  justify-content: space-between;
+}
+.dere{
+  flex: 5%;
+  margin-right: 10%;
+  margin-left: 12%;
+}
+.dere hr{
+  margin-right: 30%;
+}
+.fotos{
+  flex: 5%;
+  margin-left: 15%;
+}
+.fotos img{
+  width: 500px;
+  height: 540px;
+}
+.fotos img:hover{
+  transform: scale(1.1);
+}
+.fotos h1{
+  padding-top: 10%;
+  padding-left: 10%;
+  font-size: 70px;
+}
+.caja2{
+  display: flex;
+  justify-content: center;
+}
+.caja2 img{
+  width: 33%;
+  height: 30%;
+
+}
+.caja2 img:hover{
+  transform: scale(2);
+
+}
+.colores h2{
+  font-size: 20px;
+}
+.tallas{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+.tallas h1{
+  color: #222222;
+  text-decoration: none;
+  font-size: 20px;
+  border-style: solid;
+  border-width: medium;
+  padding: 5px 20px;
+}
+.info h1{
+  color: #222222;
+  text-decoration: none;
+  font-size: 20px;
+  border-style: solid;
+  border-width: medium;
+  padding: 5px 20px;
+  text-align: center;
+}
+.botona{
+ background-color: #222222;
+ color: white;
+ border-style: none;
+font-size: 20px;
+padding: 25px 80px;
+margin-left: 20px;
+}
+.botonb{
+ background-color: white;
+ color: #222222;
+ border-style: solid;
+font-size: 15px;
+padding: 10px 75px;
+margin-left: 19px;
+}
+.botonc{
+ background-color: white;
+ color: #222222;
+ border-style: none;
+font-size: 15px;
+margin-left: 100px;
+}
+.sim{
+    margin: 0 15%;
+}
+.sim h1{
+  font-size: 30px;
+}
+.similaress{
+  display: flex;
+  justify-content: center;
+}
+.similaress img{
+  width: 33%
+}
+.similaress img:hover{
+  transform: scale(1.1);
+}
+
+.divv h3:hover{
+  transform: scale(1.1);
+}
+
+.imagen h3:hover{
+  transform: scale(1.1);
+}
+
+
+
+/*catalogo*/
+
+/*galeria*/

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/64fbbc4af2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Agregar a Carrito ULAR</title>
+  </head>
+  <body>
+    <!-- home -->
+    <div class="barra1">
+        <button type="button" class="btn"data-toggle="modal" data-target="#myModal">Contacto <i class="fas fa-envelope"></i> </button>
+      <a class="logo" href="home.html">ULAR</a>
+      <div class="cont">
+        <button type="button" class="btn"data-toggle="modal" data-target="#myModal2"><i class="fas fa-user"></i></button>
+        <button type="button" class="btn"data-toggle="modal" data-target="#myModal3"><i class="fas fa-heart"></i></button>
+        <button type="button" class="btn"data-toggle="modal" data-target="#myModal3"><i class="fas fa-shopping-bag"></i></button>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <br><br>
+      <a href="#"><h2 class="op">Sobre Nosotros</h2></a>
+      <a href="catalogo.html"><h2 class="op">Catálogo</h2></a>
+      <a href="#"><h2 class="op">Especiales</h2></a>
+      <a href="#"><h2 class="op">Galeria</h2></a>
+      <a href="#"><h2 class="op">Entregas</h2></a>
+      <br><br>
+    </nav>
+
+
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+          <p><form>
+            <h1>Contáctanos</h1>
+            <h2><i class="fas fa-phone"> 686-123-4567 </i></h2>
+            <h2><i class="fas fa-envelope"> ular@hotmail.com</i></h2>
+            <br>
+            <p>Nombre Completo:
+            <input type="text" name="nomb" size="31" maxlength="25"></p>
+            <p>Correo Electrónico:
+            <input type="text" name="corr" size="31" maxlength="25"></p>
+            <p>Mensaje:<br>
+            <textarea rows="5" cols="52" name="comments"></textarea></p>
+            <h2 id="botoo">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+          </h2>
+        </form></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="but" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<div class="container2">
+  <!-- Modal -->
+  <div class="modal fade2" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+          <p><form>
+            <h1>Inicia Sesión</h1>
+            <br>
+            <p>Nombre Completo:
+            <input type="text" name="nomb" size="31" maxlength="25"></p>
+            <p>Correo Electrónico:
+            <input type="text" name="corr" size="31" maxlength="25"></p>
+            <p>Constraseña:
+            <input type="password" name="password" size="31" maxlength="25"></p>
+            <h2 id="botoo">
+            <input type="submit" value="Iniciar Sesión">
+            <input type="submit" value="Registrate">
+          </h2>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="but" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<div class="container3">
+  <!-- Modal -->
+  <div class="modal fade3" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+          <p><form>
+            <h1>Disponible Próximamente</h1>
+            <br>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="but" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<br><br><br>
+
+    <!-- comprar -->
+    <div id="app">
+
+      <div class="fotos">
+          <img v-bind:src="image">
+          <div class="caja2">
+            <img v-bind:src="image2">
+            <h1>+</h1>
+        </div>
+      </div>
+<div class="dere">
+<div class="titulo">
+  <h1>{{producto}}</h1>
+    <h3>{{precio}}</h3>
+</div>
+<hr size="5px" width="70%" color="#222222"/>
+<div class="colores">
+<h2>Colores:</h2>
+
+<div id="texto" v-for="variant in variants" @click="updateImage(variant.image), updateImage2(variant.image2), updateName(variant.name),updatePrecio(variant.precio)">{{variant.tipo}}</div></a>
+<br>
+<h2>Tallas:</h2>
+</div>
+
+<div class="tallas">
+  <a href="#"><h1>XS</h1></a>
+  <a href="#"><h1>S</h1></a>
+  <a href="#"><h1>M</h1></a>
+  <a href="#"><h1>L</h1></a>
+
+</div>
+<br>
+<div class="info">
+  <a href="#"><h1>Tabla de medidas</h1></a>
+  <a href="#"><h1>Detalles</h1></a>
+</div>
+<br>
+<div class="izq">
+  <div class="carrito"><h2>Cantidad:{{cart}}</h2></div>
+<div class="botones">
+    <button v-on:click="addToCart" class="botona">Añadir a la bolsa</button>
+<br>    <button v-on:click="removeCart"class="botonc">Quitar de la bolsa</button>
+<br><br>
+<button v-on:click="addToFav" class="botonb"><i class="fas fa-heart"></i> Guardar en Favoritos</button>
+  </div>
+  <ul class="det">
+    <br>
+    <li v-for="detail in details">{{detail}}</li>
+  </ul>
+</div>
+</div>
+    </div>
+    <br><br>
+    <!-- similares -->
+    <div class="sim">
+      <h1>Prendas Similares</h1>
+      <div class="similaress">
+  <img src="fotos/foto6.png" alt="">
+  <img src="fotos/foto7.png" alt="">
+  <img src="fotos/foto4.png" alt="">
+      </div>
+    </div>
+    <br>
+    <!-- reviews -->
+
+
+
+    <!--footer-->
+    <div class="final">
+      <br><br>
+      <div class="fin">
+        <i class="far fa-envelope"></i><br>
+    <div class="fin2">
+      <formmethod="post">
+        <input type="text" name="" placeholder="Ingresa Correo Electrónico"><input type="submit" name="send">
+      </form><br>
+      <br>
+      <h2>SUSCRIBIR</h2>
+      <h3>Recibe noticias y promociones de ULAR</h3>
+    </div>
+    <div class="fin3">
+      <h2>2020. ULAR Mexicali, B.C. México</h2>
+      <h2><i class="fab fa-instagram"></i>@ular.shop</h2>
+    </div>
+    </div>
+    </div>
+
+
+    <script src="funcion.js"> </script>
+    <script>
+      const miApp=app.mount('#app')
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
